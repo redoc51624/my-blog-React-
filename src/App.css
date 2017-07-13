@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+
+}
+.headerImg{
+  width: 80%;
+  height: 200px;
+      width: 100%;
+      margin: 0 auto;
+}
+.title{
+  position: relative;
+  color: black;
+  font-size: 35px;
+  display: block;
+  font-weight: 800;
+  margin: 0 auto;
+  text-align: center;
+  /* top: -11px; */
+  bottom: 135px;
+  text-transform: uppercase;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-intro {
+  font-size: large;
+}
+.App-header{
+  height: 200px;
+      margin: 0 auto;
+  background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, white); /* Standard syntax */
+}
+.navbar{
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+      position: sticky;
+}
+.navItem{
+  color: #000;
+  background: grey;
+  width: 25%;
+  padding: 10px 6.35%;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navItem:hover{
+  background: lightgrey;
+  border-bottom: 2px solid black;
+}
+.contents{
+  width: 60%;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+}
+.registerFrm{
+  width: 50%;
+  margin: 20px auto;
+  background: darkgrey;
+  text-align: center;
+  box-shadow: 10px -10px 20px #000;
+  padding: 30px;
+
+}
+label{
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  padding:10px;
+}
+.fName,.lName {
+  background: darkgrey;
+
+
+}
+input{
+   background: darkgrey;
+  width: 400px;
+  height: 30px;
+}
+.btn{
+  width: 40%;
+  margin-top: 20px;
+  box-shadow: 10px -10px 20px #000;
+}
+.active{
+  border-bottom: 2px solid #000;
+}
+.contactDetails{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
