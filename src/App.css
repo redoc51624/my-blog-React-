@@ -10,7 +10,7 @@
 }
 .title{
   position: relative;
-  color: black;
+  color:#11384F;
   font-size: 35px;
   display: block;
   font-weight: 800;
@@ -31,11 +31,11 @@
 .App-header{
   height: 200px;
       margin: 0 auto;
-  background: black; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(black, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(black, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(black, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(black, white); /* Standard syntax */
+  background: #105C89; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#105C89, white); /* Standard syntax */
 }
 .navbar{
   width: 80%;
@@ -45,7 +45,7 @@
 }
 .navItem{
   color: #000;
-  background: grey;
+  background: #1E5A7C;;
   width: 25%;
   padding: 10px 6.35%;
   text-decoration: none;
@@ -55,12 +55,17 @@
   font-weight: bold;
 }
 .navItem:hover{
-  background: lightgrey;
+  background: #3083B2;
   border-bottom: 2px solid black;
 }
 .contents{
   width: 60%;
   margin: 0 auto;
+  background: #105C89; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#105C89, white); /* Standard syntax */
 }
 ul {
   list-style-type: none;
@@ -68,11 +73,14 @@ ul {
 .registerFrm{
   width: 50%;
   margin: 20px auto;
-  background: darkgrey;
   text-align: center;
   box-shadow: 10px -10px 20px #000;
   padding: 30px;
-
+  background: #105C89; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#105C89, white); /* Standard syntax */
 }
 label{
   display: block;
@@ -81,19 +89,23 @@ label{
   padding:10px;
 }
 .fName,.lName {
-  background: darkgrey;
-
-
+  /*background: darkgrey;*/
 }
 input{
-   background: darkgrey;
+   background: #1E5A7C;
   width: 400px;
   height: 30px;
+  border: none;
+  box-shadow: 3px 3px 3px #000;
 }
 .btn{
   width: 40%;
   margin-top: 20px;
-  box-shadow: 10px -10px 20px #000;
+  box-shadow: 7px 7px 7px #000;
+}
+.btn:hover{
+  background: #105C89;
+  color: #000;
 }
 .active{
   border-bottom: 2px solid #000;

@@ -1,30 +1,40 @@
 import React from 'react';
-
+import styles from './Newpost.css';
 import './index.css';
 
 class NewPost extends React.Component {
+  constructor() {
+   super();
+
+   this.state = {
+      data: []
+   }
+
+   this.setStateHandler = this.setStateHandler.bind(this);
+};
+setStateHandler() {
+   var item = "setState..."
+   var myArray = this.state.data;
+   myArray.push(item)
+   this.setState({data: myArray})
+};
   render() {
     return (
       <div>
       <div className="contents">
            <ul>
-           <li><h1>{this.props.headerProp}</h1>
-            <h2>{this.props.contentProp}</h2>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           </li>
-           <li> <h1>Header 1</h1>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           </li>
-           <li> <h1>Header 1</h1>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           </li>
-           <li> <h1>Header 1</h1>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           </li>
-           <li> <h1>Header 1</h1>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           </li>
+            <li><h2>Create your moments , Just spill it out of your mind</h2></li>
            </ul>
+           <div className="newPostForm">
+           <label className="heading">Heading:<input type="text" name="Heading" /></label>
+           <label  className="date">Date:<input type="date" name="Date" /></label>
+           <label className="fName">Blogger First Name:<input type="text" name="fstName" /></label>
+           <label  className="lName">Blogger Last Name:<input type="text" name="lstName" /></label>
+           <label  className="occupation">Your occupation:<input type="text" name="occupation" /></label>
+           <textarea className="blogContent" name="blogContent" form="newPostForm">Enter your post here...</textarea>
+           <label  className="tags">Tag related to post:<input type="text" name="tags" /></label>
+             <button className="btn" onClick = {this.setStateHandler}>Submit Post</button>
+           </div>
       </div>
       </div>
     );

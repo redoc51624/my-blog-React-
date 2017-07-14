@@ -20,14 +20,3 @@ ReactDOM.render(<App headerProp = "Header from props..." contentProp = "Content 
 document.getElementById('root')
 );
 registerServiceWorker();
-
-this.itemsRef = firebaseApp.database().ref();
-
-// Get a reference to the database service
- // 
- // var userId = firebase.auth().currentUser.uid;
- // return firebase.database().ref('/react-blog-4e990/' + title).once('value').then(function(snapshot) {
- //   var blogTitle = snapshot.val().title;
- //   console.log("Print title": blogTitle);
- //   // ...
- // });
