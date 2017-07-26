@@ -10,6 +10,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -21,11 +22,54 @@
     -->
     <title>React App</title>
   </head>
+  <style>
+    #loginPage{
+      margin: 0 auto;
+    background: #105C89; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#105C89, white); /* Standard syntax */
+    }
+    input{
+      margin: 10px 20px;
+      width: 250px;
+      color: black;
+      display: inline;
+      background: linear-gradient(#105C89, white); /* Standard syntax */
+    }
+    input[placholder]{
+      color: white;
+    }
+    .btn-secondary{
+      width: 90px;
+      background: grey;
+      color: black;
+      outline: none;
+    }
+    .row{
+      margin: 0 auto;
+      height: auto;
+    }
+    .btnRow{
+
+    }
+  </style>
   <body>
+  <div id="loginPage" class="container">
+  <div class="row">
+  <input id="txtEmail" type="email" name="email" placeholder="email">
+  <input id="pwd" type="password" name="password" placeholder="**********">
+  <button id="btnSignin" class="btn btn-action">Sign In</button>
+   <button id="btnSignUp" class="btn  btn-secondary">Sign Up</button>
+    <button id="btnLogout" class="btn btn-action">Log Out</button>
+    </div>
+  </div>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+
     <div id="main"></div>
     <!--
       This HTML file is a template.
@@ -37,5 +81,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="../src/index.js"></script>>
   </body>
 </html>

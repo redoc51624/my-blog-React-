@@ -99,9 +99,10 @@ input{
   box-shadow: 3px 3px 3px #000;
 }
 .btn{
-  width: 40%;
+  width: 90px;
   margin-top: 20px;
   box-shadow: 7px 7px 7px #000;
+  background: #1E5A7C;
 }
 .btn:hover{
   background: #105C89;
