@@ -21,11 +21,11 @@ setStateHandler() {
   render() {
     return (
       <div>
-      <div className="contents">
+      <div className="contents col-xs-12 col-md-10 col-md-offset-2 col-sm-12 col-lg-10 col-lg-offset-2">
            <ul>
             <li><h2>Create your moments , Just spill it out of your mind</h2></li>
            </ul>
-           <div className="newPostForm">
+           <div className="newPostForm col-xs-10 col-xs-offset-2 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-lg-8 col-lg-offset-4">
            <label className="heading">Heading:<input type="text" name="Heading" /></label>
            <label  className="date">Date:<input type="date" name="Date" /></label>
            <label className="fName">Blogger First Name:<input type="text" name="fstName" /></label>
