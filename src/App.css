@@ -37,15 +37,17 @@
     background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#105C89, white); /* Standard syntax */
 }
+.nav{
+  padding-right: 0 !important;
+}
 .navbar{
-  width: 80%;
+ margin: 0;
   height: 40px;
       position: sticky;
 }
 .navItem{
   color: #000;
-  background: #1E5A7C;;
-  width: 25%;
+  background: #1E5A7C;
   padding: 10px 6.35%;
   text-decoration: none;
   border-bottom: 1px solid black;
@@ -104,6 +106,6 @@ input{
   border-bottom: 2px solid #000;
 }
 .contactDetails{
-  width: 80%;
+  margin: 20px;
   text-align: center;
 }

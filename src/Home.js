@@ -16,40 +16,62 @@ class Home extends React.Component {
    }
  }
    componentDidMount(){
-    const rootRef = firebase.database().ref().child('1');
-    const titleRef = rootRef.child('title');
-    const dateRef = rootRef.child('date');
-    const postRef = rootRef.child('description');
-    titleRef.on('value', snap => {
+    const rootRef1 = firebase.database().ref().child('1');
+    const titleRef1 = rootRef1.child('title');
+    const dateRef1 = rootRef1.child('date');
+    const postRef1 = rootRef1.child('description');
+
+    const rootRef2 = firebase.database().ref().child('2');
+    const titleRef2 = rootRef2.child('title');
+    const dateRef2 = rootRef2.child('date');
+    const postRef2 = rootRef2.child('description');
+
+    titleRef1.on('value', snap => {
       this.setState({
         header1: snap.val()
         });
     });
-        dateRef.on('value', snap => {
+        dateRef1.on('value', snap => {
       this.setState({
         date1: snap.val()
         });
     });
-            postRef.on('value', snap => {
+      postRef1.on('value', snap => {
       this.setState({
         description1: snap.val()
+        });
+    });
+
+         titleRef2.on('value', snap => {
+      this.setState({
+        header2: snap.val()
+        });
+    });
+        dateRef2.on('value', snap => {
+      this.setState({
+        date2: snap.val()
+        });
+    });
+      postRef2.on('value', snap => {
+      this.setState({
+        description2: snap.val()
         });
     });
   }
   render() {
     return (
-      <div className="contents col-xs-12 col-md-10 col-md-offset-2 col-sm-12 col-lg-10 col-lg-offset-2">
-           <ul className="col-xs-10 col-xs-offset-2 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-lg-8 col-lg-offset-4">
+      <div className="container contents col-xs-12 col-md-12 col-sm-12 col-lg-12">
+           <ul className="row">
            <li> 
-                  <h1> {this.state.header}</h1>
-                <p>Posted On: {this.state.date}</p>
-                <p className="srtDescr">{this.state.description}</p>
+                  <h1> {this.state.header1}</h1>
+                <p>Posted On: {this.state.date1}</p>
+                <p className="srtDescr">{this.state.description1}</p>
                
            </li>
            <li> 
-                  <h1>{this.state.header}</h1>
-                 <p>Posted On: {this.state.date}</p>
-                <p className="srtDescr">{this.state.description}</p>
+                  <h1>{this.state.header2}</h1>
+                 <p>Posted On: {this.state.date2}</p>
+                <p className="srtDescr">{this.state.description2}</p>
                
            </li>
            </ul>
