@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display');
+
 .App {
   text-align: center;
 
@@ -108,4 +110,21 @@ input{
 .contactDetails{
   margin: 20px;
   text-align: center;
+}
+.App-footer{
+  font-weight: 500;
+  font-size: 12px;
+    background: #105C89; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#105C89, white); /* Standard syntax */
+}
+.aboutContent{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    font-family: 'Droid Serif', serif;
 }

@@ -1,8 +1,22 @@
-import React from 'react';
 import './index.css';
+import React, { Component, PropTypes } from 'react';
 import * as firebase from 'firebase';
+import {
+  TwitterButton,
+  FacebookLikeButton,
+  FacebookShareButton,
+  FacebookMessengerButton,
+  GoogleButton,
+  GoogleHangoutButton,
+  PinterestButton,
+  WhatsAppButton
+} from 'react-social-buttons';
 
 class About extends React.Component {
+
+    isBrowser () {
+    return !(typeof document === "undefined" || typeof window === "undefined");
+  }
   constructor(){
     super();
     this.state = {
@@ -19,11 +33,37 @@ class About extends React.Component {
     });
   }
   render() {
+       let url = ''
+   if (this.isBrowser()) 
+    {
+     url = window.location.href; 
+   }
+ 
+   let whatsAppProps = {
+     msg: 'test',
+     button: <span>{'Share the posts by Vikas Kumar'}</span>,
+   };
     return (
-      <div>
-       <div className="contents">
-        <h1>{this.state.speed}</h1>
-       </div>
+       <div>
+        <div className="container contents">
+            <div className="row">
+              <h4 className="aboutContent">{this.state.speed}</h4>
+            </div>
+         <div className="row">
+          <div className="socialContact">
+            <div id="buttons">
+            <FacebookLikeButton url={url} />
+            <FacebookShareButton url={url} />
+            <FacebookMessengerButton url={url} />
+            <TwitterButton url={url} text="Check the posts by Vikas Kumar"/>
+            <GoogleButton url={url} />
+            <GoogleHangoutButton url={url} />
+            <PinterestButton url={url} />
+            <WhatsAppButton {...whatsAppProps} />
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     );
   }

@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import './index.css';
 import * as firebase from 'firebase';
+import {
+  TwitterButton,
+  FacebookLikeButton,
+  FacebookShareButton,
+  FacebookMessengerButton,
+  GoogleButton,
+  GoogleHangoutButton,
+  PinterestButton,
+  WhatsAppButton
+} from 'react-social-buttons';
 
 class Home extends React.Component {
+      isBrowser () {
+    return !(typeof document === "undefined" || typeof window === "undefined");
+  }
 
   constructor() {
    super();
@@ -59,6 +72,16 @@ class Home extends React.Component {
     });
   }
   render() {
+  let url = ''
+   if (this.isBrowser()) 
+    {
+     url = window.location.href; 
+   }
+ 
+   let whatsAppProps = {
+     msg: 'test',
+     button: <span>{'Share posts by Vikas Kumar'}</span>,
+   };
     return (
       <div className="container contents col-xs-12 col-md-12 col-sm-12 col-lg-12">
            <ul className="row">
@@ -66,12 +89,40 @@ class Home extends React.Component {
                   <h1> {this.state.header1}</h1>
                 <p>Posted On: {this.state.date1}</p>
                 <p className="srtDescr">{this.state.description1}</p>
+                    <div className="row">
+                      <div className="socialContact">
+                        <div id="buttons">
+                        <FacebookLikeButton url={url} />
+                        <FacebookShareButton url={url} />
+                        <FacebookMessengerButton url={url} />
+                        <TwitterButton url={url} text="Check the posts by Vikas Kumar"/>
+                        <GoogleButton url={url} />
+                        <GoogleHangoutButton url={url} />
+                        <PinterestButton url={url} />
+                        <WhatsAppButton {...whatsAppProps} />
+                        </div>
+                      </div>
+                    </div>
                
            </li>
            <li> 
                   <h1>{this.state.header2}</h1>
                  <p>Posted On: {this.state.date2}</p>
                 <p className="srtDescr">{this.state.description2}</p>
+                  <div className="row">
+                    <div className="socialContact">
+                      <div id="buttons">
+                      <FacebookLikeButton url={url} />
+                      <FacebookShareButton url={url} />
+                      <FacebookMessengerButton url={url} />
+                      <TwitterButton url={url} text="Check the posts by Vikas Kumar"/>
+                      <GoogleButton url={url} />
+                      <GoogleHangoutButton url={url} />
+                      <PinterestButton url={url} />
+                      <WhatsAppButton {...whatsAppProps} />
+                      </div>
+                    </div>
+                  </div>
                
            </li>
            </ul>

@@ -27,8 +27,8 @@ const App = () => (
           <div className="nav navbar col-xs-12 col-md-12 col-sm-12 col-lg-12">
            <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/">Home</Link>
            <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/newpost">newpost</Link>
-           <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/about">about us</Link>
-           <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/contact">contact us</Link>
+           <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/about">about me</Link>
+           <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/contact">contact me</Link>
           </div>
           </div>
           <Switch>
@@ -38,6 +38,11 @@ const App = () => (
             <Route path = "/about" component = {About} />
             <Route path = "/contact" component = {Contact} />
           </Switch>
+
+        <div className="row App-footer col-xs-12 col-sm-12 col-md-12">
+          Copyright © 2017 Vikas Kumar
+        </div>
+
         </div>
       </Router>
 )
