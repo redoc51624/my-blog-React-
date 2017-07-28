@@ -45,7 +45,7 @@ class About extends React.Component {
    };
     return (
        <div>
-        <div className="container contents">
+        <div className="container contents col-xs-12 col-md-12 col-sm-12 col-lg-12">
             <div className="row">
               <h4 className="aboutContent">{this.state.speed}</h4>
             </div>

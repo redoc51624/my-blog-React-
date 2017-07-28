@@ -23,6 +23,10 @@ textarea{
     background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#105C89, white); /* Standard syntax */
 }
+.inputField{
+      display: inline-block;
+    width: 275px;
+}
 @media only screen and (min-width: 768px) {
 .newPostForm{
      margin-left: 180px;

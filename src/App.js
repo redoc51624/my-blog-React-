@@ -25,8 +25,8 @@ const App = () => (
         </div>
         <div className="row">
           <div className="nav navbar col-xs-12 col-md-12 col-sm-12 col-lg-12">
-           <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/">Home</Link>
-           <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/newpost">newpost</Link>
+           <Link className="navItem active col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/">Home</Link>
+           <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/newpost">Post Questions</Link>
            <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/about">about me</Link>
            <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/contact">contact me</Link>
           </div>

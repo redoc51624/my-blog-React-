@@ -85,7 +85,7 @@ ul {
 label{
   display: block;
   margin: 0 auto;
-  padding:10px;
+  padding:2px;
 }
 .fName,.lName {
   /*background: darkgrey;*/
@@ -123,7 +123,7 @@ input{
 .aboutContent{
     font-size: 16px;
     font-weight: bold;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 1.2px;
     font-style: italic;
     font-family: 'Droid Serif', serif;

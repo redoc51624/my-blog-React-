@@ -94,7 +94,7 @@ class Home extends React.Component {
                         <div id="buttons">
                         <FacebookLikeButton url={url} />
                         <FacebookShareButton url={url} />
-                        <FacebookMessengerButton url={url} />
+                       
                         <TwitterButton url={url} text="Check the posts by Vikas Kumar"/>
                         <GoogleButton url={url} />
                         <GoogleHangoutButton url={url} />
@@ -114,7 +114,7 @@ class Home extends React.Component {
                       <div id="buttons">
                       <FacebookLikeButton url={url} />
                       <FacebookShareButton url={url} />
-                      <FacebookMessengerButton url={url} />
+                     
                       <TwitterButton url={url} text="Check the posts by Vikas Kumar"/>
                       <GoogleButton url={url} />
                       <GoogleHangoutButton url={url} />
