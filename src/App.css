@@ -48,7 +48,7 @@
       position: sticky;
 }
 .navItem{
-  color: #000;
+  color: black;
   background: #1E5A7C;
   padding: 10px 6.35%;
   text-decoration: none;
@@ -59,6 +59,16 @@
 .navItem:hover{
   background: #3083B2;
   border-bottom: 2px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.navItem:active{
+   background: #3083B2;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 .contents{
   background: #105C89; /* For browsers that do not support gradients */
@@ -113,7 +123,8 @@ input{
 }
 .App-footer{
   font-weight: 500;
-  font-size: 12px;
+     font-size: 14px;
+    height: 25px;
     background: #105C89; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
