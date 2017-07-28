@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display');
+
 .App {
   text-align: center;
 
@@ -30,27 +32,27 @@
 }
 .App-header{
   height: 200px;
-      margin: 0 auto;
+   margin: 0 auto;
   background: #105C89; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#105C89, white); /* Standard syntax */
 }
+.nav{
+  padding-right: 0 !important;
+}
 .navbar{
-  width: 80%;
-  margin: 0 auto;
+ margin: 0;
   height: 40px;
       position: sticky;
 }
 .navItem{
   color: #000;
-  background: #1E5A7C;;
-  width: 25%;
+  background: #1E5A7C;
   padding: 10px 6.35%;
   text-decoration: none;
   border-bottom: 1px solid black;
-  margin: 0 auto;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -59,8 +61,6 @@
   border-bottom: 2px solid black;
 }
 .contents{
-  width: 60%;
-  margin: 0 auto;
   background: #105C89; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
@@ -84,26 +84,23 @@ ul {
 }
 label{
   display: block;
-  width: 400px;
   margin: 0 auto;
-  padding:10px;
+  padding:2px;
 }
 .fName,.lName {
   /*background: darkgrey;*/
 }
 input{
    background: #1E5A7C;
-  width: 400px;
   height: 30px;
   border: none;
   box-shadow: 3px 3px 3px #000;
 }
-.btn{
-  width: 40%;
-  margin-top: 20px;
+.mybtn{
   box-shadow: 7px 7px 7px #000;
+      margin: 10px 3px;
 }
-.btn:hover{
+.mybtn:hover{
   background: #105C89;
   color: #000;
 }
@@ -111,7 +108,23 @@ input{
   border-bottom: 2px solid #000;
 }
 .contactDetails{
-  width: 80%;
-  margin: 0 auto;
+  margin: 20px;
   text-align: center;
+}
+.App-footer{
+  font-weight: 500;
+  font-size: 12px;
+    background: #105C89; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#105C89, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#105C89, white); /* Standard syntax */
+}
+.aboutContent{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    font-family: 'Droid Serif', serif;
 }

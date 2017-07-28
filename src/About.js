@@ -1,25 +1,69 @@
-import React from 'react';
-
 import './index.css';
+import React, { Component, PropTypes } from 'react';
+import * as firebase from 'firebase';
+import {
+  TwitterButton,
+  FacebookLikeButton,
+  FacebookShareButton,
+  FacebookMessengerButton,
+  GoogleButton,
+  GoogleHangoutButton,
+  PinterestButton,
+  WhatsAppButton
+} from 'react-social-buttons';
 
 class About extends React.Component {
-  render() {
-    return (
-      <div>
-       <div className="contents">
-           <ul>
-           <li> <h1>Header 1</h1>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           </li>
-           <li> <h1>Header 1</h1>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           </li>
-           <li> <h1>Header 1</h1>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           </li>
 
-           </ul>
-       </div>
+    isBrowser () {
+    return !(typeof document === "undefined" || typeof window === "undefined");
+  }
+  constructor(){
+    super();
+    this.state = {
+      speed: 10
+    };
+  };
+  componentDidMount(){
+    const rootRef = firebase.database().ref().child('react');
+    const speedRef = rootRef.child('speed');
+    speedRef.on('value', snap => {
+      this.setState({
+        speed: snap.val()
+        });
+    });
+  }
+  render() {
+       let url = ''
+   if (this.isBrowser()) 
+    {
+     url = window.location.href; 
+   }
+ 
+   let whatsAppProps = {
+     msg: 'test',
+     button: <span>{'Share the posts by Vikas Kumar'}</span>,
+   };
+    return (
+       <div>
+        <div className="container contents col-xs-12 col-md-12 col-sm-12 col-lg-12">
+            <div className="row">
+              <h4 className="aboutContent">{this.state.speed}</h4>
+            </div>
+         <div className="row">
+          <div className="socialContact">
+            <div id="buttons">
+            <FacebookLikeButton url={url} />
+            <FacebookShareButton url={url} />
+            <FacebookMessengerButton url={url} />
+            <TwitterButton url={url} text="Check the posts by Vikas Kumar"/>
+            <GoogleButton url={url} />
+            <GoogleHangoutButton url={url} />
+            <PinterestButton url={url} />
+            <WhatsAppButton {...whatsAppProps} />
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     );
   }
