@@ -19,6 +19,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "css-loader": "^0.28.4"
+    "css-loader": "^0.28.4",
+    "firebase-tools": "^3.9.1"
   }
 }
