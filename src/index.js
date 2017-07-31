@@ -17,45 +17,6 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
-const txtEmail = document.getElementById('txtEmail');
-const password = document.getElementById('pwd');
-const btnlogin = document.getElementById('btnSignin');
-const btnsignup = document.getElementById('btnSignUp');
-const btnlogout = document.getElementById('btnLogout');  
-
-//add login event
-btnlogin.addEventListener('click', e =>{
-	const email = txtEmail.value;
-	const pass = password.value;
-	const auth = firebase.auth();
-	const promise = auth.signInWithEmailAndPassword('email','pass');
-	promise.catch(e=>console.log(e.message));
-});
-
-//Sign up evnet
-btnlogin.addEventListener('click', e =>{
-	const email = txtEmail.value;
-	const pass = password.value;
-	const auth = firebase.auth();
-	const promise = auth.createUserWithEmailAndPassword('email','pass');
-	promise.catch(e=>console.log(e.message));
-});
-
-//Signout event
-btnlogout.addEventListener('click', e=>{
-	firebase.auth().signOut();
-});
-
-//add realtime listner
-firebase.auth().onAuthStateChanged(firebaseUser=>{
-	if(firebaseUser){
-		console.log('firebase user');
-	}
-	else
-	{
-		console.log('Not logged in');
-	}
-});
 }());
 
 

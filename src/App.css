@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display');
 
+@media only screen and (max-width: 768px){
+  ..navItem{
+    height: 50px;
+    text-align: center;
+  }
+}
 .App {
   text-align: center;
 
@@ -128,3 +134,4 @@ input{
     font-style: italic;
     font-family: 'Droid Serif', serif;
 }
+

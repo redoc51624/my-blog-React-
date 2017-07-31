@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './Newpost.css';
 import './index.css';
 import * as firebase from 'firebase';
-import { Form, Text } from 'react-form'
-
 
 class NewPost extends React.Component {
   constructor() {
