@@ -26,6 +26,7 @@ textarea{
 .inputField{
       display: inline-block;
     width: 275px;
+    margin: 10px 5px;
 }
 @media only screen and (min-width: 768px) {
 .newPostForm{

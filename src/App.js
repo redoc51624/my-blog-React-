@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {Component} from 'react';
+import {Carousel, onChange, onClickItem, onClickThumb} from 'react-responsive-carousel';
 import styles from './App.css';
 import Contact from './contact.js';
 import About from './About.js';
 import NewPost from './Newpost.js';
 import Register from './Register.js';
 import Home from './Home.js';
-
+import Typist from 'react-typist';
 import {
   BrowserRouter as Router,
   Route,
@@ -15,13 +16,17 @@ import {
 } from 'react-router-dom'
 import ('./contact.js');
 
+var ReactDOM = require('react-dom');
+
 const App = () => (
 
   <Router>
         <div className="container">
         <div className="row App-header col-xs-12 col-sm-12 col-md-12">
-          <img className="headerImg" src="http://1.bp.blogspot.com/_LRoLPBAy3Pw/TN2A98egqQI/AAAAAAAACps/f9wpivzL-2E/s1600/header+3+kolumner.png" alt="header img" />
-          <span className="title">Welcome</span>
+          // <img className="headerImg" src="http://1.bp.blogspot.com/_LRoLPBAy3Pw/TN2A98egqQI/AAAAAAAACps/f9wpivzL-2E/s1600/header+3+kolumner.png" alt="header img" />
+          <span className="title"> <Typist>Vikas kumar</Typist></span>
+          <span className="title2"> <Typist>The best way to know me is to talk to me</Typist></span>
+          
         </div>
         <div className="row">
           <div className="nav navbar col-xs-12 col-md-12 col-sm-12 col-lg-12">
@@ -40,6 +45,7 @@ const App = () => (
           </Switch>
 
         <div className="row App-footer col-xs-12 col-sm-12 col-md-12">
+
           Copyright © 2017 Vikas Kumar
         </div>
 
