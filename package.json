@@ -2,6 +2,7 @@
   "name": "my-blog",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://redoc51624.github.io/myapp",
   "dependencies": {
     "firebase": "^4.1.5",
     "react": "^15.6.1",
