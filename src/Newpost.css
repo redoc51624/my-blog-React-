@@ -27,6 +27,9 @@ textarea{
       display: inline-block;
     width: 275px;
 }
+.postHeading{
+  margin-left: 10px;
+}
 @media only screen and (min-width: 768px) {
 .newPostForm{
      margin-left: 180px;
