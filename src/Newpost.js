@@ -37,7 +37,7 @@ setStateHandler() {
             <li><h2>Create your moments , Just spill it out of your mind</h2></li>
            </ul>
            <div className="newPostForm col-xs-12 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-lg-8 col-lg-offset-4">
-             <label className="inputField heading">Heading:<input type="text" name="Heading" /></label>
+             <label className="inputField heading">Heading:<input type="text" className="postHeading" name="Heading" /></label>
              <label  className="inputField date">Date:<input type="date" name="Date" /></label>
               <label className="inputField fName">First Name:<input type="text" name="fstName" /></label>
              <label  className="inputField lName">Last Name:<input type="text" name="lstName" /></label>
