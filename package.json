@@ -9,14 +9,17 @@
     "react-dom": "^15.6.1",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
-    "react-scripts": "1.0.9",
-    "react-social-buttons": "^1.0.8"
+    "react-scripts": "^1.0.9",
+    "react-social-buttons": "^1.0.8",
+    "react-typist": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "css-loader": "^0.28.4"

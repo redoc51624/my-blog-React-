@@ -26,6 +26,7 @@ textarea{
 .inputField{
       display: inline-block;
     width: 275px;
+    margin: 10px 5px  ;
 }
 .postHeading{
   margin-left: 10px;
@@ -35,3 +36,4 @@ textarea{
      margin-left: 180px;
 }
 }
+
