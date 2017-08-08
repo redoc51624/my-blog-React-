@@ -11,6 +11,7 @@ import {
   PinterestButton,
   WhatsAppButton
 } from 'react-social-buttons';
+import Typist from 'react-typist';
 
 class Home extends React.Component {
       isBrowser () {
@@ -20,12 +21,12 @@ class Home extends React.Component {
   constructor() {
    super();
    this.state = {
-      header1: "Header from state...",
-      date1: "17/01/2017",
-      description1: "Short description from state...",
-       header2: "Header from state...",
-      date2: "17/01/2017",
-      description2: "Short description from state..."
+      header1: "Loading...",
+      date1: "Loading...",
+      description1: "Loading...",
+       header2: "Loading...",
+      date2: "Loading...",
+      description2: "Loading..."
    }
  }
    componentDidMount(){
