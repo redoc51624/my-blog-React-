@@ -94,8 +94,6 @@ class About extends React.Component {
             <TwitterButton url={url} text="Check the posts by Vikas Kumar"/>
             <GoogleButton url={url} />
             <GoogleHangoutButton url={url} />
-            <PinterestButton url={url} />
-            <WhatsAppButton {...whatsAppProps} />
             </div>
           </div>
         </div>

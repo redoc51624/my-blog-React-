@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as firebase from 'firebase';
+import 'firebase/auth';
+import 'firebase/firestore';
 import registerServiceWorker from './registerServiceWorker';
 
 // Initialize Firebase

@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display');
 
 @media only screen and (max-width: 768px){
+   .navbar
+   {
+    height: 160px !important;
+  }
   ..navItem{
     height: 50px;
-    text-align: center;
+    text-align: center; 
   }
 }
 /*App.js csss*/
@@ -29,7 +33,7 @@ title {
 
 }
 .headerImg{
-  width: 80%;
+ /* width: 80%;*/
   height: 200px;
       width: 100%;
       margin: 0 auto;
@@ -68,6 +72,7 @@ title {
 .App-header{
   height: 200px;
    margin: 0 auto;
+   padding: 0;
   background: #105C89; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#105C89, white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#105C89, white); /* For Opera 11.1 to 12.0 */
@@ -75,11 +80,12 @@ title {
     background: linear-gradient(#105C89, white); /* Standard syntax */
 }
 .nav{
-  padding-right: 0 !important;
+  /*padding-right: 0 !important*/;
 }
 .navbar{
  margin: 0;
-  height: 40px;
+ padding: 16px;
+  height: 80px;
       position: sticky;
 }
 .navItem{
