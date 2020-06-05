@@ -23,13 +23,14 @@ const App = () => (
   <Router>
         <div className="container">
         <div className="row App-header col-xs-12 col-sm-12 col-md-12">
-          // <img className="headerImg" src="http://1.bp.blogspot.com/_LRoLPBAy3Pw/TN2A98egqQI/AAAAAAAACps/f9wpivzL-2E/s1600/header+3+kolumner.png" alt="header img" />
-          <span className="title"> <Typist>Vikas kumar</Typist></span>
+          // // <img className="headerImg" src="http://1.bp.blogspot.com/_LRoLPBAy3Pw/TN2A98egqQI/AAAAAAAACps/f9wpivzL-2E/s1600/header+3+kolumner.png" alt="header img" />
+          
+          <span className="title"> Vikas kumar</span>
           
           
         </div>
         <div className="row">
-          <div className="nav navbar col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div className="nav navbar col-xs-3 col-sm-12 col-md-12 col-lg-12">
            <Link className="navItem active col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/">Home</Link>
            <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/about">about</Link>
            <Link className="navItem col-xs-3 col-md-3 col-sm-3 col-lg-3" to="/contact">contact</Link>

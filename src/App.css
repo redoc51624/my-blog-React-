@@ -90,17 +90,19 @@ title {
 }
 .navItem{
   color: #000;
-  background: #1E5A7C;
+  background: #b3ffff;
   padding: 10px 6.35%;
+  border-radius: 25px;
+  box-shadow: 1px 1px 34px 6px ghostwhite;
   text-decoration: none;
-  border-bottom: 1px solid black;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
 .navItem:hover{
-  background: #3083B2;
-  border-bottom: 2px solid black;
+  background: #ccffff;
+  box-shadow: 2px 2px 8px 10px ghostwhite;
+  text-decoration: none;
 }
 .contents{
   background: #105C89; /* For browsers that do not support gradients */
@@ -147,7 +149,7 @@ input{
   color: #000;
 }
 .active{
-  border-bottom: 2px solid #000;
+  /*border-bottom: 2px solid #000;*/
 }
 .contactDetails{
   margin: 20px;
